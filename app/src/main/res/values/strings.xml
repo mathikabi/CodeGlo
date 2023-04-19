@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name_text">Android App</string>
+
+    <string name="next">Continue</string>
+    <string name="download">Download</string>
+    <string name="app_name">CodeGlo Task</string>
+    <string name="image_description">image_description</string>
+
+    <string name="breed_List">Breed List</string>
+    <string name="breed_image_download">Breed Image Download</string>
+</resources>

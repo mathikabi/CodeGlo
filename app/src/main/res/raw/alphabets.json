@@ -1,0 +1,167 @@
+{
+  "ResponseStatus": {
+    "ResponseCode": "M1001",
+    "ResponseFlag": "SUCCESS",
+    "ResponseMessage": "SUCCESS"
+  },
+  "ResponseData": {
+    "Alphabets": [
+      {
+        "Title": "A",
+        "Image": "apple",
+        "Description": "Apple",
+        "Key": "a"
+      },
+      {
+        "Title": "B",
+        "Image": "apple",
+        "Description": "Ball",
+        "Key": "b"
+      },
+      {
+        "Title": "C",
+        "Image": "apple",
+        "Description": "Cat",
+        "Key": "c"
+      },
+      {
+        "Title": "D",
+        "Image": "apple",
+        "Description": "Dog",
+        "Key": "d"
+      },
+      {
+        "Title": "E",
+        "Image": "apple",
+        "Description": "Elephant",
+        "Key": "e"
+      },
+      {
+        "Title": "F",
+        "Image": "apple",
+        "Description": "Fish",
+        "Key": "f"
+      },
+      {
+        "Title": "G",
+        "Image": "apple",
+        "Description": "Grapes",
+        "Key": "g"
+      },
+      {
+        "Title": "H",
+        "Image": "apple",
+        "Description": "Horse",
+        "Key": "h"
+      },
+      {
+        "Title": "I",
+        "Image": "apple",
+        "Description": "Ice Cream",
+        "Key": "i"
+      },
+      {
+        "Title": "J",
+        "Image": "apple",
+        "Description": "Jug",
+        "Key": "j"
+      },
+      {
+        "Title": "K",
+        "Image": "apple",
+        "Description": "Kite",
+        "Key": "k"
+      },
+      {
+        "Title": "L",
+        "Image": "apple",
+        "Description": "Ladder",
+        "Key": "l"
+      },
+      {
+        "Title": "M",
+        "Image": "apple",
+        "Description": "Mango",
+        "Key": "m"
+      },
+      {
+        "Title": "N",
+        "Image": "apple",
+        "Description": "Net",
+        "Key": "n"
+      },
+      {
+        "Title": "O",
+        "Image": "apple",
+        "Description": "Orange",
+        "Key": "o"
+      },
+      {
+        "Title": "P",
+        "Image": "apple",
+        "Description": "Pencil",
+        "Key": "p"
+      },
+      {
+        "Title": "Q",
+        "Image": "apple",
+        "Description": "queen",
+        "Key": "q"
+      },
+      {
+        "Title": "R",
+        "Image": "apple",
+        "Description": "Rainbow",
+        "Key": "r"
+      },
+      {
+        "Title": "S",
+        "Image": "apple",
+        "Description": "Stars",
+        "Key": "s"
+      },
+      {
+        "Title": "T",
+        "Image": "apple",
+        "Description": "Tree",
+        "Key": "t"
+      },
+      {
+        "Title": "U",
+        "Image": "apple",
+        "Description": "Apple",
+        "Key": "u"
+      },
+      {
+        "Title": "V",
+        "Image": "apple",
+        "Description": "Van",
+        "Key": "v"
+      },
+      {
+        "Title": "W",
+        "Image": "apple",
+        "Description": "Watermelon",
+        "Key": "w"
+      },
+      {
+        "Title": "X",
+        "Image": "apple",
+        "Description": "X-Ray",
+        "Key": "x"
+      },
+      {
+        "Title": "Y",
+        "Image": "apple",
+        "Description": "Yak",
+        "Key": "y"
+      },
+      {
+        "Title": "Z",
+        "Image": "apple",
+        "Description": "Zebra",
+        "Key": "z"
+      }
+    ]
+  }
+}

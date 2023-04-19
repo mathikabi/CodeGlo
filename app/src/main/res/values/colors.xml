@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="checkbox_text_color">#8F8F8F</color>
+    <color name="transparent_black_dialog">#80000000</color>
+    <color name="screen_bg">#FBF8F7</color>
+
+    <color name="colorPrimary">#088ED5</color>
+    <color name="colorPrimaryDark">#06699E</color>
+    <color name="colorAccent">#FE5353</color>
+
+    <!--colors for modern ui-->
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#FE5353</color>
+    <color name="loginBkColor">#f0f0f0</color>
+    <color name="colorHalfWhite">#FFFFFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGreen">#6BB22E</color>
+
+    <!--colros for card-->
+    <color name="whiteCardColor">#fff</color>
+    <color name="BgCardColor">#E1E1E1</color>
+    <color name="dropdown_bg">#E1E1E1</color>
+    <color name="green">#48B803</color>
+    <color name="red">#D50C23</color>
+</resources>

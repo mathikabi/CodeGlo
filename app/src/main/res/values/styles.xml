@@ -1,0 +1,117 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="fontFamily">@font/gilroy_regular</item>
+    </style>
+
+    <!--designs for login and register-->
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loginParent" parent="parent">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/loginBkColor</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    <style name="headerText" parent="parent">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+
+    <style name="fontStyle" parent="parent">
+        <item name="fontFamily">@font/patrick_regular</item>
+    </style>
+
+    <style name="loginCard" parent="parent"></style>
+
+    <style name="linearParent" parent="parent">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="headerTextPrimary" parent="headerText">
+        <item name="android:textColor">@color/primaryTextColor</item>
+    </style>
+
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="loginButton" parent="viewParent">
+        <item name="android:background">@drawable/login_bn_bg</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <!--Spinner Style-->
+    <style name="location_spinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/_35sdp</item>
+        <item name="android:layout_marginStart">@dimen/_1sdp</item>
+        <item name="android:layout_marginEnd">@dimen/_1sdp</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:dropDownVerticalOffset">@dimen/_40sdp</item>
+    </style>
+
+    <style name="light_btn_style">
+        <item name="android:layout_width">@dimen/_125sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ok_cancel_btn</item>
+    </style>
+
+    <style name="dark_btn_style">
+        <item name="android:layout_width">@dimen/_125sdp</item>
+        <item name="android:layout_height">@dimen/_40sdp</item>
+        <item name="android:textSize">@dimen/_18sdp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ok_btn</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="regular_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="medium_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="bold_font_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="dogListVM"
+            type="com.mvvm.app.ui.home.DogListVM" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:text="@string/breed_List"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/rvDogList"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDogList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnNext"
+           app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textToolBar"
+          />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="@{(view) -> dogListVM.onClickAction(view)}"
+            android:text="@string/next"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+      <!--  android:visibility="@{dogListVM.btnVisible ? View.VISIBLE : View.INVISIBLE}"-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

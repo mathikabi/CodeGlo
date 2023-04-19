@@ -1,0 +1,166 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'kotlin-kapt'
+
+android {
+    repositories {
+        mavenCentral()
+    }
+    compileSdkVersion 33
+    buildToolsVersion '33.0.0'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        applicationId "com.mvvm.app"
+        versionCode 1
+        versionName "1.0.1"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            debuggable = false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable = true
+            minifyEnabled = false
+        }
+    }
+
+    productFlavors {
+        flavorDimensions "default"
+        app {
+            dimension "default"
+            manifestPlaceholders = [appNameValue: "Sample App Name", apiTypeValue: "sample value"]
+            ext.betaDistributionReleaseNotes = "Sample App"
+            buildConfigField 'String', 'APP_NAME', '"Sample"'
+            buildConfigField 'String', 'HOST', '"https://dog.ceo/"' /*production*/
+            buildConfigField 'String', 'API_URL_VALUE', '"Sample"'
+            buildConfigField 'String', 'API_VERSION', '"V2"'
+            buildConfigField "int", "DB_VERSION", '1'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def appName = rootProject.name
+                def separate = "_"
+                def flavor = variant.productFlavors[0].name
+                def buildType = variant.buildType.name
+                def formattedDate = new Date().format('yyMMddHHmm')
+                def newName = appName + separate + flavor + separate + formattedDate
+                if (buildType.contains("release")) {
+                    newName = newName + "_signed"
+                }
+                newName = newName + ".apk"
+                outputFileName = newName
+            }
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        mavenCentral()
+        flatDir {
+            dirs 'libs'
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }
+//  mavenLocal() // remove this if you like
+    }
+    androidExtensions {
+        experimental = true
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/LICENSE.txt', 'META-INF/LICENSE', 'META-INF/NOTICE.txt', 'META-INF/NOTICE', 'LICENSE.txt', 'LICENSE', 'NOTICE', 'NOTICE.txt']
+        }
+    }
+
+    namespace 'com.gatebot.app'
+}
+
+dependencies {
+    def room_version = "2.5.0"
+
+    // core
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.21"
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation "androidx.appcompat:appcompat-resources:1.6.1"
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.viewpager2:viewpager2:1.1.0-beta01'
+    implementation 'com.google.android.material:material:1.6.0'
+
+    // ViewModel and LiveData
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    kapt 'androidx.lifecycle:lifecycle-compiler:2.5.1'
+    implementation 'androidx.paging:paging-runtime-ktx:3.1.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    // Glide, picasso
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'jp.wasabeef:picasso-transformations:2.4.0'
+
+    // RxJava and Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.9.0'
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+
+
+    //room
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    // Other
+    implementation 'com.facebook.stetho:stetho:1.6.0'
+
+
+    // test dependencies
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.1.1'
+}

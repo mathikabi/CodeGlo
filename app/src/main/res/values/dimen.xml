@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_txt_size">14dp</dimen>
+    <dimen name="description_font_size">14dp</dimen>
+    <dimen name="names_text_size">12sp</dimen>
+
+    <!--Custom Button Dimensions-->
+    <dimen name="normal_btn_txt_size">14dp</dimen>
+    <dimen name="big_btn_height">47dp</dimen>
+
+    <dimen name="landing_btn_login_width">154dp</dimen>
+    <dimen name="landing_btn_login_height">49dp</dimen>
+
+    <dimen name="home_btn_login_width">82dp</dimen>
+    <dimen name="home_btn_login_height">30dp</dimen>
+
+    <dimen name="rounded_corner_width">101dp</dimen>
+    <dimen name="rounded_corner_height">33dp</dimen>
+
+    <dimen name="medium_rounded_corner_width">101dp</dimen>
+    <dimen name="medium_rounded_corner_height">49dp</dimen>
+
+    <dimen name="medium_btn_width">60dp</dimen>
+    <dimen name="medium_btn_height">30dp</dimen>
+
+    <dimen name="small_custom_btn_width">80dp</dimen>
+    <dimen name="small_custom_btn_height">35dp</dimen>
+
+
+    <dimen name="ir_dining_customize_btn_width">154dp</dimen>
+    <dimen name="ir_dining_customize_btn_height">49dp</dimen>
+
+
+    <dimen name="spa_datePicker_btn_width">148dp</dimen>
+    <dimen name="spa_datePicker_btn_height">34dp</dimen>
+
+    <dimen name="spa_btn_ok_width">168dp</dimen>
+    <dimen name="spa_btn_ok_height">34dp</dimen>
+
+    <dimen name="rest_book_table_btn_width">163dp</dimen>
+    <dimen name="rest_book_table_btn_height">32dp</dimen>
+
+    <!--Home-->
+
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="home_tile_width">168dp</dimen>
+    <dimen name="home_tile_height">92dp</dimen>
+
+    <dimen name="home_grid_text">12dp</dimen>
+    <dimen name="home_grid_spacing">2dp</dimen>
+
+
+    <dimen name="home_btn_login_text_size">12dp</dimen>
+    <dimen name="title_font_size">15dp</dimen>
+
+    <dimen name="menu_font_size">13dp</dimen>
+
+
+    <!--LANDING-->
+
+
+    <dimen name="landing_btn_login_text_size">14sp</dimen>
+
+    <dimen name="landing_btn_later_text_size">14sp</dimen>
+    <dimen name="landing_btn_onboarding_text_size">12sp</dimen>
+
+    <!--SIGNUP-->
+
+    <dimen name="text_input_hint_size">12sp</dimen>
+    <dimen name="text_input_edittext_size">14sp</dimen>
+
+    <dimen name="textinput_layout_height">48dp</dimen>
+
+    <dimen name="edittext_layout_height">27dp</dimen>
+
+    <!--LOGIN-->
+    <dimen name="fb_btn_text_size">14sp</dimen>
+
+    <dimen name="login_line_width">36dp</dimen>
+    <dimen name="login_line_height">1dp</dimen>
+
+    <!--WEATHER-->
+    <dimen name="weather_title_text">40sp</dimen>
+    <dimen name="weather_current_temp_text">55sp</dimen>
+    <dimen name="weather_temp_text">23sp</dimen>
+    <dimen name="weather_data_text">14sp</dimen>
+    <dimen name="weather_forecast_text">18sp</dimen>
+
+    <!--FEEDBACK-->
+    <dimen name="feedback_title">18sp</dimen>
+    <dimen name="feedback_rate_our">16sp</dimen>
+
+    <!--PROFILE-->
+    <dimen name="profile_text_size">16sp</dimen>
+    <dimen name="profile_edit_size">14sp</dimen>
+    <dimen name="profile_header_size">12sp</dimen>
+    <dimen name="sub_heading_size">14sp</dimen>
+
+</resources>
